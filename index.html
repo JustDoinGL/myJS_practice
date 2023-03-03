@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,10 @@
     <title>Js_Practice</title>
     <link rel="stylesheet" href="style.css/index-style.css">
 </head>
+
 <body>
 
-    <header class="container">
+    <header>
         <nav>
             <ul class="header__list">
                 <li class="header__list__item">
@@ -35,7 +37,7 @@
     </header>
 
     <main class="container">
-        <a name ="first-task"></a>
+        <a name="first-task"></a>
         <section class="task-one">
             <h2>Task one</h2>
             <p>Тут сделал добавление и удаление к картинке класса при клике на нее.</p>
@@ -47,7 +49,7 @@
             <script src="js/first.js"></script>
         </section>
 
-        <a name ="second-task"></a>
+        <a name="second-task"></a>
         <section class="task-one">
             <h2>Task two</h2>
             <p>Кординаты блока отностильено расположения мыши в этом блоке.</p>
@@ -57,9 +59,21 @@
                 Y: <span class="offy">0</span>
             </p>
             <script src="js/second.js"></script>
-            
+        </section>
+
+        <a name="second-task"></a>
+        <section class="task3">
+            <h2>Task 3</h2>
+            <p>Прогресс бар который заполняется при нажатии кнопки с введеным временем</p>
+            <div class="second-task__row">
+                <button class="button-load">Запустить загрузку</button>
+                <progress id="task3__progress" value="0" max="100"></progress>
+                <p class="finich">Загрузка завершена</p>
+            </div>
+            <script src="js/3.js"></script>
         </section>
     </main>
-    
+
 </body>
+
 </html>
