@@ -1,7 +1,6 @@
 h2 {
     text-align: center;
     font-size: 32px;
-
 }
 
 p {
@@ -9,8 +8,10 @@ p {
 }
 
 section {
-    margin-bottom: 30px;
+    margin-top: 40px;
+    padding-bottom: 20px;
 }
+
 
 .container {
     margin: 0 auto;
@@ -34,9 +35,6 @@ nav {
     display: flex;
 }
 
-.task-one {
-    margin: 0;
-}
 
 .task-one__img {
     margin-top: 50px;
@@ -52,5 +50,12 @@ nav {
 .changes-img {
     box-shadow: 0 0 10px;
     background: #6dcff6;
+}
+
+#second-task__teast {
+    margin: 20px auto;
+    width: 400px;
+    height: 200px;
+    border: 2px solid black;
 }
 
