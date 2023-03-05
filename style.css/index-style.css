@@ -85,3 +85,18 @@ nav {
     display: none;
 }
 
+/* Секция 4 */
+.task4 {
+    text-align: center;
+}
+
+.menu-button {
+    cursor: pointer;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+
+
