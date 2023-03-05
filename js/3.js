@@ -14,7 +14,7 @@ function userProgress(time) {
     }, time)
 }
 
-document.onclick = function(event) {
+document.querySelector(".button-load").onclick = function(event) {
     if (event.target.tagName === "BUTTON") {
         document.querySelector('.finich').style.display = "none"
         userProgress(3)
