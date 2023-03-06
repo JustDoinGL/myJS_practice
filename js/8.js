@@ -19,6 +19,7 @@ document.getElementById('modal-window-button').onclick = () => {
 function removeFiled() {
     let chips = document.querySelector('#chips-field .chips')
     if (chips === null) {
-        document.querySelector('#chips-field').remove()
+        setTimeout(
+            () => document.querySelector('#chips-field').remove(), 500)
     }
 }
