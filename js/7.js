@@ -52,7 +52,6 @@ function getColor(x) {
     x = x * 255 / 100
     y = 255 - x
     let color = 'rgb(' + x + ',' + y + ',0)'
-    console.log(color)
     return color
 }
 
