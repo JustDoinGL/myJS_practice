@@ -142,4 +142,25 @@ h4 {
     z-index: 1;
 }
 
+.img-task-7 {
+   display: flex;
+   
+}
+
+.task9__img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    display: none;
+    transition: all ease 1s;
+}
+
+.opacity {
+    display: block;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    transition: all ease 1s;
+}
+
 
