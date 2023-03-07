@@ -163,4 +163,19 @@ h4 {
     transition: all ease 1s;
 }
 
+.task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task11-1 {
+    padding: 5px;
+}
+
+.task11-2 {
+    display: flex;
+    justify-content: space-around;
+}
+
 
