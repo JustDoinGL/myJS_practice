@@ -65,6 +65,21 @@
                     <a class="item-link" href="#10-task">10</a>
                 </li>
             </ul>
+            <ul class="header__list">
+                <li class="header__list__item">
+                    <a class="item-link" href="#11-task">11</a>
+                </li>
+            </ul>
+            <ul class="header__list">
+                <li class="header__list__item">
+                    <a class="item-link" href="#12-task">12</a>
+                </li>
+            </ul>
+            <ul class="header__list">
+                <li class="header__list__item">
+                    <a class="item-link" href="#13-task">13</a>
+                </li>
+            </ul>
 
         </nav>
     </header>
@@ -265,7 +280,8 @@
             <h2>Task 12</h2>
             <h3 style="text-align: center;">Поиск</h3>
             <div style="display: flex; ">
-                <input style="margin: 0 auto; width: 300px; height: 30px; font-size: 16px;" id="task12__input" type="text">
+                <input style="margin: 0 auto; width: 300px; height: 30px; font-size: 16px;" id="task12__input"
+                    type="text">
             </div>
             <div class="task-7">
                 <ul id="task12__ul">
@@ -281,6 +297,27 @@
                 </ul>
             </div>
             <script src="js/12.js"></script>
+        </section>
+
+        <a name="13-task"></a>
+        <section class="task13">
+            <h2>Task 13</h2>
+            <h3 style="text-align: center;">Написать свой видео плеер</h3>
+            <div style="display: flex; justify-content: center;">
+                <video id="task13-video" width="800px" height="400px">
+                    <source src="img/Skydance _ Ghosted _ Full Trailer (2023).mp4">
+                </video>
+            </div>
+            <div class="task-7">
+                <button class="task13__buttons" id="task13-play">Play</button>
+                <button class="task13__buttons" id="task13-pause">Pause</button>
+                <button class="task13__buttons" id="task13-stop">Stop</button>
+                <button class="task13__buttons" id="task13-fast">Fast</button>
+                <button class="task13__buttons" id="task13-slow">Slow</button>
+                <button class="task13__buttons" id="task13-normal">Normal</button>
+                <input class="task13__buttons" type="range" id="task13-sound" min="0" max="100" value="0">
+            </div>
+            <script src="js/13.js"></script>
         </section>
 
     </main>

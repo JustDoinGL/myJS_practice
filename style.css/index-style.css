@@ -186,4 +186,9 @@ h4 {
     display: none;
 }
 
+.task13__buttons {
+    min-width: 30px;
+    margin-right: 10px;
+}
+
 
