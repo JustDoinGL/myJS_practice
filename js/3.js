@@ -5,7 +5,7 @@ function userProgress(time) {
     setInterval(function() {
         if (start < 101) {
             progressElement.value = start
-            console.log(start)
+            // console.log(start)
         }
         start++
         if (start === 100) {
