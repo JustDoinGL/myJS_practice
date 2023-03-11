@@ -1,7 +1,7 @@
 const words = ['super', 'blin', 'nine', 'flex']
 
 document.querySelector('#task18__button').onclick = () => {
-    let text = document.querySelector('#task18-getText').value
+    let text = document.querySelector('#task18-getText').value.toLowerCase()
     for (let i = 0; i < words.length; i++) {
         while (text.indexOf(words[i]) != -1) {
             text = text.replace(words[i], star(words[i].length))
