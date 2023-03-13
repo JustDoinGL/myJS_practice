@@ -24,6 +24,10 @@ document.getElementById('task20__button').onclick = () => {
         }
         text += '}'
     }
-    document.getElementById('task20__resalt').value = text
+    if (text !== '') {
+        document.getElementById('task20__resalt').value = text
+    } else {
+        document.getElementById('task20__resalt').value = "Вы ввели число, которое прывышает размер массива."
+    }
 }
 
