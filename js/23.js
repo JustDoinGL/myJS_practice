@@ -2,7 +2,6 @@ let input = document.querySelector('#task23__input')
 let send = document.querySelector('#task23__text')
 let li = document.querySelector('#task23__li')
 let form = document.querySelector('#task23__form')
-let pattern = /^[a-zA-Z0-9]+$/;
 
 
 send.addEventListener('click', formHadler)
@@ -10,7 +9,13 @@ send.addEventListener('click', formHadler)
 function formHadler() {
     let text = input.value
 
-    if (pattern.test(text)) {
+    if (text) {
+        // Удалем p
+        if (li.querySelector('p')) {
+            let p = li.querySelector('p')
+            li.removeChild(p)
+        }
+
         // Создаем элемент ли
         let task = document.createElement('li')
         task.innerText = text
@@ -30,9 +35,10 @@ function formHadler() {
 
         // Обнуляем поле ввода
         input.value = ''
-    } else {
+    } else if (!li.querySelector('p')) {
         let info = document.createElement('p')
-        info.innerText = "Ваша задача пуста, введите хотя ы один символ"
+        info.innerText = "Ваша задача пуста, введите хотя бы один символ"
+        li.append(info)
     }
 
 }
