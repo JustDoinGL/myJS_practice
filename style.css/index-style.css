@@ -21,6 +21,8 @@ section {
 
 .header__list {
     list-style-type: none;
+    display: flex;
+    
 }
 
 .item-link {
