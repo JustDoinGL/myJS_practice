@@ -1,18 +1,32 @@
 let input = document.querySelector('#task23__input')
 let send = document.querySelector('#task23__text')
 let li = document.querySelector('#task23__li')
+let form = document.querySelector('#task23__form')
+
 
 send.addEventListener('click', formHadler)
 
-function formHadler(event) {
-    event.preventDefault()
+function formHadler() {
     let text = input.value
+
+    // Создаем элемент ли
     let task = document.createElement('li')
     task.innerText = text
     li.append(task)
 
-    console.log(task)
+    // Создаем кнопку дилит, стили дла нее и добавляем в li
+    let deleteButton = document.createElement('button')
+    deleteButton.setAttribute('role', 'button')
+    deleteButton.innerText = "Удалить"
+    deleteButton.style['margin-left'] = '15px'
+    task.append(deleteButton)
 
+    // Вешаем листенер по нажатию
+    deleteButton.addEventListener('click', function () {
+        this.closest('li').remove()
+    })
+
+    // Обнуляем поле ввода
     input.value = ''
 
 }
