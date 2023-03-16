@@ -8,11 +8,11 @@ send.addEventListener('click', formHadler)
 
 function formHadler() {
     let text = input.value
+    let p = li.querySelector('p')
 
     if (text) {
         // Удалем p
-        if (li.querySelector('p')) {
-            let p = li.querySelector('p')
+        if (p) {
             li.removeChild(p)
         }
 
@@ -35,7 +35,7 @@ function formHadler() {
 
         // Обнуляем поле ввода
         input.value = ''
-    } else if (!li.querySelector('p')) {
+    } else if (!p) {
         let info = document.createElement('p')
         info.innerText = "Ваша задача пуста, введите хотя бы один символ"
         li.append(info)
