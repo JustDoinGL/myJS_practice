@@ -1,2 +1,2 @@
 ﻿# myJS_practice
- https://justdoingl.github.io/myJS_practice1/
+ https://justdoingl.github.io/myJS_practice/
