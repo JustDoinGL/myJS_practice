@@ -499,7 +499,8 @@
         <a name="24-task"></a>
         <section class="task24">
             <h2>Task 24</h2>
-            <p>Пользователь вводит, что нужно вывести задает интервал вывода и через сколько остановить вывод. <mark>Ввод проихводится в секндах!</mark></p>
+            <p>Пользователь вводит, что нужно вывести задает интервал вывода и через сколько остановить вывод.
+                <mark>Ввод проихводится в секндах!</mark></p>
             <div class="container1">
                 <input id="task24__text" type="text">
                 <input id="task24__start" min="0" type="number">
@@ -522,7 +523,25 @@
             <script src="js/25.js"></script>
         </section>
 
-
+        <a name="26-task"></a>
+        <section class="task26">
+            <h2>Task 26</h2>
+            <p>Пользователь вводит, массив чисел, которы нужно перемножить.</p>
+            <div style="display: flex; align-items: center;">
+                <label for="task26__action">Выберите действие:</label>
+                <input id="task26__1number" type="number">
+                <select id="task26__action" name="action">
+                    <option value="multiply ">Умножить</option>
+                    <option value="add ">Сложить</option>
+                    <option value="divide ">Делить</option>
+                    <option value="grape">subtract</option>
+                </select>
+                <input id="task26__2number" type="number">
+                <button id="task26__button">Рассчитать</button>
+                <p>Ответ: <span id="task26__span"></span></p>
+            </div>
+            <script src="js/26.js"></script>
+        </section>
 
 
     </main>
