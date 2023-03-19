@@ -5,6 +5,7 @@ let startTime;
 
 // Start
 startButton.onclick = () => {
+    clearTimeout(startTime)
     let getTime = Number(document.querySelector('#task27__time').innerHTML)
     startTime = setInterval(() => {
         getTime++
