@@ -258,4 +258,10 @@ li {
     padding: 6px;
 }
 
+.task27-s {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
 
